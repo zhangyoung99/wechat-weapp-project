@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="title">电影T250</view>
+</view>

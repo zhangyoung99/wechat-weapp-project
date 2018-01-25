@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#F6F8F9",
+    "navigationBarTitleText": "推荐电影",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color": "#000",
+    "selectedColor": "#FF0000",
+    "backgroundColor": "#e5e5e5",
+    "borderStyle": "#666",
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "text": "推荐电影",
+        "iconPath": "images/icon/movie.png",
+        "selectedIconPath":"images/icon/movie-active.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "正在上映",
+        "iconPath": "images/icon/theater.png",
+        "selectedIconPath": "images/icon/theater-active.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "搜索",
+        "iconPath": "images/icon/search.png",
+        "selectedIconPath": "images/icon/search-active.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "定位",
+        "iconPath": "images/icon/location.png",
+        "selectedIconPath": "images/icon/location-active.png"
+      }   
+
+    ]
+  }
+}
