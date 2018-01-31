@@ -1,7 +1,11 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/movie/movie",
+    "pages/new/new",
+    "pages/location/location",
+    "pages/search/search"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -22,19 +26,19 @@
         "selectedIconPath":"images/icon/movie-active.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/new/new",
         "text": "正在上映",
         "iconPath": "images/icon/theater.png",
         "selectedIconPath": "images/icon/theater-active.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/search/search",
         "text": "搜索",
         "iconPath": "images/icon/search.png",
         "selectedIconPath": "images/icon/search-active.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/location/location",
         "text": "定位",
         "iconPath": "images/icon/location.png",
         "selectedIconPath": "images/icon/location-active.png"

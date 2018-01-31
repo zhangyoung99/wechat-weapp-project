@@ -1,18 +1,20 @@
-<!--index.wxml-->
+<!--首页 电影列表-->
 <view class="container">
   <view class="page-title">
     <text>{{title}}</text>
   </view>
-  <scroll-view scroll-y ="true" class="page-body">
-    <navigator url="pages/index/index" wx:for="{{movies}}" class="page-body-item">
+  <scroll-view scroll-y ="true" class="page-body" bindscrolltolower="loadMore">
+    <navigator url="pages/movie/movie" wx:for="{{movies}}" class="page-body-item">
       <view class="item">
-        <image src="{{item.post}}" class="item-img"></image>
+        <image src="{{item.images.small}}" class="item-img"></image>
         <view class="item-info">
-          <text class="movie-name">{{item.name}}</text>
-          <text class="movie-english">{{item.englishName}}</text>
-          <text class="movie-director">{{item.director}}</text>
+          <text class="movie-name">{{item.title}}</text>
+          <text class="movie-english">{{item.original_title}}({{item.year}})</text>
+          <text class="movie-director">{{item.name}}</text>
         </view>
-        <view class="movie-rating"><text>{{item.rating}}</text></view>
+        <view class="movie-rating">
+          <text>{{item.rating.average}}</text>
+        </view>
       </view>
     </navigator>
   </scroll-view>

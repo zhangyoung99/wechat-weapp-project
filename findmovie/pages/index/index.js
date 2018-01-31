@@ -1,35 +1,23 @@
 //index.js
 //获取应用实例
-const app = getApp()
+const app = getApp();
+
+const API_URL = 'https://api.douban.com/v2/movie/top250';
 
 Page({
   data: {
-    title:'电影T250',
-    movies: [{
-      name: '电影1',
-      englishName: 'movie1',
-      post: 'http://iph.href.lu/60x60',
-      director: '导演1',
-      rating: '9'
-    }, {
-      name: '电影2',
-      englishName: 'movie2',
-      post: 'http://iph.href.lu/60x60',
-      director: '导演2',
-      rating: '9'
-    }
-    ],
+    title: '加载中...',
+    movies: [],
+    loading: true,
+    start: 0,
+    count: 20
   },
 
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
+  onLoad () {
+    // 调用全局实例方法获取全局数据
+    app.fetchApi(API_URL+`?start=${this.data.start}&count=${this.data.count}`, (err,data) => {
+      // 更新数据
+      this.setData({title:'豆瓣电影Top250', movies: data.subjects})
     })
-  },
-  onLoad: function () {
-  },
-  getUserInfo: function(e) {
-    console.log(e)
   }
 })

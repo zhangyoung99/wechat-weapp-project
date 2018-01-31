@@ -15,7 +15,8 @@
 }
 .page-body-item .item-img{
   width: 160rpx;
-  height: 160rpx;  
+  height: 160rpx; 
+  border: 1px solid #666; 
 }
 .page-body-item .item-info {
   display: flex;
