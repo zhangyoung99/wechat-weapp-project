@@ -3,7 +3,7 @@ App({
   gobalData:{
     hasLogin: false
   },
-  // 应用的全局方法
+  // 应用的自定义全局方法
   fetchApi (url,callback){
     wx.request({
       url,

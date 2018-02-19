@@ -1,1 +1,9 @@
 /* pages/search/search.wxss */
+.search {
+  /* width: 200px; */
+  border: 1px solid #e5e5e5;
+  margin: 0 auto;
+}
+.search-ipt {
+  text-align: center;
+}

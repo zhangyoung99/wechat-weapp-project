@@ -1,2 +1,4 @@
-<!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+<!-- 搜索页面 search.wxml-->
+<view class="search">
+  <input placeholder="搜索的电影" class="search-ipt"></input>
+</view>

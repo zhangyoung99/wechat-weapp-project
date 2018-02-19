@@ -1,4 +1,6 @@
 // pages/location/location.js
+
+// const app = getApp();
 Page({
 
   /**
@@ -12,7 +14,19 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    console.log('地图定位!')
+    wx.getLocation({
+      type: "gcj02",
+      success: function(res) {
+        var latitude = res.latitude
+        var longitude = res.longitude
+        wx.openLocation({
+          latitude: latitude,
+          longitude: longitude,
+          scale: 18
+        })
+      },
+    })
   },
 
   /**

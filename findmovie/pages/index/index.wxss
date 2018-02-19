@@ -24,7 +24,7 @@
   flex-direction: column;
   margin-left: 10px;
 }
-.item-info .movie-english {
+.item-info .movie-sub {
   color: #e5e5e5;
   font-size: 14px;
 }
@@ -32,7 +32,7 @@
   color: #e5e5e5;
   font-size: 14px;
 }
-.page-body-item .movie-rating {
+.page-body-item rating {
    /* align-items: flex-end;  */
     /* align-self: flex-end; */
     color: #f00;

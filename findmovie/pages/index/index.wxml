@@ -9,10 +9,11 @@
         <image src="{{item.images.small}}" class="item-img"></image>
         <view class="item-info">
           <text class="movie-name">{{item.title}}</text>
-          <text class="movie-english">{{item.original_title}}({{item.year}})</text>
-          <text class="movie-director">{{item.name}}</text>
+          <text class="movie-sub">{{item.original_title}}({{item.year}})</text>
+          <view class="artists"><text class="movie-director" wx:for="{{item.directors}}">{{item.name}}</text>
+          </view>
         </view>
-        <view class="movie-rating">
+        <view class="rating">
           <text>{{item.rating.average}}</text>
         </view>
       </view>

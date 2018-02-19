@@ -1,2 +1,4 @@
 <!--pages/location/location.wxml-->
-<text>pages/location/location.wxml</text>
+<view class="container" id="map">
+
+</view>

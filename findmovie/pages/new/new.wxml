@@ -1,2 +1,22 @@
-<!--pages/new/new.wxml-->
-<text>pages/new/new.wxml</text>
+<!--正在上映 页面-->
+<view class="container">
+  <view class="page-title">
+    <text>{{title}}</text>
+  </view>
+  <scroll-view scroll-y ="true" class="page-body" bindscrolltolower="loadMore">
+    <navigator url="pages/movie/movie" wx:for="{{movies}}" class="page-body-item">
+      <view class="item">
+        <image src="{{item.images.small}}" class="item-img"></image>
+        <view class="item-info">
+          <text class="movie-name">{{item.title}}</text>
+          <text class="movie-sub">{{item.original_title}}({{item.year}})</text>
+          <view class="artists"><text class="movie-director" wx:for="{{item.directors}}">{{item.name}}</text>
+          </view>
+        </view>
+        <view class="rating">
+          <text>{{item.rating.average}}</text>
+        </view>
+      </view>
+    </navigator>
+  </scroll-view>
+</view>
